@@ -5,7 +5,7 @@
 
 # 🍃 Tempera Tempera
 
-### *Metadata Driven Data Engineering Study Case*
+### *Data Engineering Study Case*
 
 <p>
 Projeto de Engenharia de Dados orientado por metadados para geração automática de dados relacionais de uma rede fictícia de restaurantes.
