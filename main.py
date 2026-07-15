@@ -70,7 +70,7 @@ transacoes_df = get_transacoes(
     Dirs,
     get_join_ids,
     table_metadata,
-    10000,
+    1000,
     clientes_df,
     operacoes_df,
     produtos_df)

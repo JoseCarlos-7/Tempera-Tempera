@@ -1,0 +1,7 @@
+venv_redis
+venvv
+datalake\landing
+datalake
+.env
+
+git rm -r --cached .env
