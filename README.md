@@ -31,7 +31,7 @@ Projeto de Engenharia de Dados orientado por metadados para geração automátic
 > - 🌾 Ouro Velho `#D4A359`
 > - 🌿 Folha Seca `#7A8462`
 
-O **Tempera Tempera** demonstra como estruturar uma solução de Engenharia de Dados limpa, organizada e orientada por metadados utilizando **Python, YAML, Pandas e Power BI**.
+O projeto **Tempera Tempera** demonstra como estruturar uma solução de Engenharia de Dados limpa, organizada e orientada por metadados utilizando **Python, YAML, Pandas e Power BI**.
 
 O foco está na arquitetura da aplicação, simplicidade do código e facilidade de manutenção.
 
@@ -119,8 +119,8 @@ Tempera-Tempera
 # 🚀 Execução
 
 ```bash
-python -m venv venv
-venv\Scripts\activate
+python -m venv venvv
+venvv\Scripts\activate
 pip install -r requirements.txt
 python main.py
 ```
