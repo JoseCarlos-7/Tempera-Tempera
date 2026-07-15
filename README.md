@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="images/image.png" width="170"/>
+<img src="images/logo.png" width="170"/>
 
 # 🍃 Tempera Tempera
 
