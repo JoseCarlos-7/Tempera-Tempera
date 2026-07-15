@@ -1,0 +1,44 @@
+servicos:
+  config:
+    source: api
+    layer: bronze
+    description: Operacoes
+
+  columns:
+
+    cod_servico:      
+      role: bk
+      hash_key: hk_servico
+      dtype: int64
+      nullable: false
+      description: cod_servico
+
+    nome:      
+      role: attribute
+      dtype: string
+      nullable: false
+      description: nome do servico
+
+    custo:      
+      role: attribute
+      dtype: float64
+      nullable: false
+      description: Custo de operacao
+
+    preco:      
+      role: attribute
+      dtype: float64
+      nullable: false
+      description: Preco de operacao
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp

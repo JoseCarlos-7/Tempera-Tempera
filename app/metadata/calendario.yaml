@@ -1,0 +1,51 @@
+calendario:
+  config:
+    source: api
+    layer: bronze
+    description: calendario
+
+  columns:
+  
+    cod_calendario:      
+      role: bk
+      hash_key: hk_calendario
+      dtype: int64
+      nullable: false
+      description: Primary key of calendario
+
+    data:      
+      role: attribute
+      hash_key: hk_operacoes
+      dtype: datetime64[ns]
+      nullable: false
+      description: data
+
+    dia_da_semana:      
+      role: attribute
+      dtype: int64
+      nullable: false
+      description: Dia_da_semana
+
+    feriado:      
+      role: attribute
+      dtype: string
+      nullable: false
+      description: feriado
+
+    data_especial:      
+      role: attribute
+      dtype: string
+      nullable: false
+      description: data_especial atribuida pelo cliente
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp

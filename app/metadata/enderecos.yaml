@@ -1,0 +1,65 @@
+enderecos:
+  config:
+    source: api
+    layer: bronze
+    description: Enderecos 
+
+  columns:
+
+    cod_endereco:      
+      role: bk
+      hash_key: hk_endereco
+      dtype: int64
+      nullable: false
+      description: Primary key of endereco
+
+    cep:
+      role: attribute
+      dtype: string
+      nullable: true
+      description: cep
+
+    logradouro:
+      role: attribute
+      dtype: string
+      nullable: true      
+      description: logradouro
+
+    numero:
+      role: attribute
+      dtype: int64
+      nullable: true      
+      description: numero
+
+    cod_estado:
+      role: fk
+      hash_key: hk_estado
+      dtype: int64
+      nullable: false
+      description: cod_estado
+
+    cod_cidade:
+      role: fk
+      hash_key: hk_cidade
+      dtype: int64
+      nullable: false
+      description: cod_cidade
+
+    cod_bairro:
+      role: fk
+      hash_key: hk_bairro
+      dtype: int64
+      nullable: false
+      description: cod_bairro
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp   

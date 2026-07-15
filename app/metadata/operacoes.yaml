@@ -1,0 +1,32 @@
+operacoes:
+  config:
+    source: api
+    layer: bronze
+    description: Operacoes
+
+  columns:
+
+    cod_operacao:      
+      role: bk
+      hash_key: hk_operacao
+      dtype: int64
+      nullable: false
+      description: cod_operacao
+
+    tipo:      
+      role: attribute
+      dtype: string
+      nullable: false
+      description: tipo de operacao
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp

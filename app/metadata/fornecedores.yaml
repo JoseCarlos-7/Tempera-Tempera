@@ -1,0 +1,52 @@
+fornecedores:
+  config:
+    source: api
+    layer: bronze
+    description: fornecedores
+
+  columns:
+
+    cod_fornecedor:      
+      role: bk
+      hash_key: hk_fornecedor
+      dtype: int64
+      nullable: false
+      description: cod_fornecedor
+
+    nome:      
+      role: attribute
+      dtype: string
+      nullable: false
+      description: nome
+
+    data_fundacao:      
+      role: attribute
+      dtype: datetime64[ns]
+      nullable: false
+      description: data_fundacao
+
+    cod_endereco:      
+      role: fk
+      hash_key: hk_endereco
+      dtype: int64
+      nullable: false
+      description: tipo de operacao
+
+    cod_contato:      
+      role: fk
+      hash_key: hk_contato
+      dtype: int64
+      nullable: false
+      description: tipo de operacao
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp

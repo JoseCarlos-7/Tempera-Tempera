@@ -1,0 +1,73 @@
+transacoes:
+  config:
+    source: api
+    layer: bronze
+    description: transacoes do CRM
+
+  columns:
+
+    cod_transacao:      
+      role: bk
+      hash_key: hk_transacao
+      dtype: int64
+      nullable: false
+      description: Primary key of transacao
+
+    cod_calendario:      
+      role: fk
+      hash_key: hk_calendario
+      dtype: int64
+      nullable: false
+      description: Primary key of calendario
+
+    cod_operacoes:      
+      role: fk
+      hash_key: hk_operacoes
+      dtype: int64
+      nullable: false
+      description: Primary key of operacoes
+
+    cod_produto:      
+      role: fk
+      hash_key: hk_produto
+      dtype: int64
+      nullable: false
+      description: Primary key of produto
+
+    quantidade_produto:      
+      role: attribute
+      dtype: int64
+      nullable: false
+      description: Quantidade de produtos
+
+    cod_cliente:      
+      role: fk
+      hash_key: hk_cliente
+      dtype: int64
+      nullable: false
+      description: Primary key of cliente
+
+    cod_servico:      
+      role: fk
+      hash_key: hk_servico
+      dtype: int64
+      nullable: false
+      description: Primary key of servico
+
+    quantidade_servico:      
+      role: attribute
+      dtype: int64
+      nullable: false
+      description: Quantidade de servicos
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp

@@ -1,0 +1,74 @@
+contatos:
+  config:
+    source: api
+    layer: bronze
+    description: Contatos de pessoas
+
+  columns:
+
+    cod_contato:      
+      role: bk
+      hash_key: hk_contato
+      dtype: int64
+      nullable: false
+      description: Primary key of contatos
+
+    telefone:
+      role: attribute
+      dtype: string
+      nullable: true
+      description: telefone de contato
+
+    email:
+      role: attribute
+      dtype: string
+      nullable: true
+      description: email
+
+    instagram:
+      role: attribute
+      dtype: string
+      nullable: false
+      description: instagram
+
+    facebook:
+      role: attribute
+      dtype: string
+      nullable: false
+      description: facebook
+
+    linkedin:
+      role: attribute
+      dtype: string
+      nullable: false
+      description: linkedin
+
+    x:
+      role: attribute
+      dtype: string
+      nullable: false
+      description: social x
+
+    kuwei:
+      role: attribute
+      dtype: string
+      nullable: false
+      description: kuwei
+
+    whatsapp:
+      role: attribute
+      dtype: string
+      nullable: false
+      description: whatsapp
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp

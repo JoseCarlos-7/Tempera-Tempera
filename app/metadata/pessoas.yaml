@@ -1,0 +1,56 @@
+pessoas:
+  config:
+    source: api
+    layer: bronze
+    description: Person data from CRM
+
+  columns:
+
+    cod_pessoa:      
+      role: bk
+      hash_key: hk_pessoa
+      dtype: int64
+      nullable: false
+      description: Primary key of person
+
+    cpf:
+      role: pk
+      dtype: string
+      nullable: false
+      description: Business key of person
+
+    genero:
+      role: attribute
+      dtype: string
+      nullable: true
+      description: Age of person
+
+    nome:
+      role: attribute
+      dtype: string
+      nullable: false
+      description: Business key of person
+
+    data_nascimento:
+      role: datetime64[ns]
+      dtype: string
+      nullable: false
+      description: Business key of person
+
+    cor_da_pele:
+      role: attribute
+      dtype: string
+      nullable: false
+      description: Business key of person
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp

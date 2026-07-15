@@ -1,0 +1,44 @@
+estados:
+  config:
+    source: api
+    layer: bronze
+    description: Person data from CRM
+
+  columns:
+
+    cod_estado:      
+      role: bk
+      hash_key: hk_estado
+      dtype: int64
+      nullable: false
+      description: cod_estado
+
+    nome:      
+      role: attribute
+      dtype: string
+      nullable: false
+      description: Primary key of endereco
+
+    habitantes:
+      role: attribute
+      dtype: int64
+      nullable: false
+      description: habitantes
+
+    renda_percapita:
+      role: attribute
+      dtype: float64
+      nullable: false      
+      description: renda_percapita
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp

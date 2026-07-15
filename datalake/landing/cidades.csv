@@ -1,0 +1,21 @@
+,cod_cidade,nome,habitantes,renda_percapita,cod_estado
+0,1,Campo Limpo Paulista,77000,1200,1
+1,2,Jundiaí,430000,2900,1
+2,3,Campinas,1210000,3000,1
+3,4,São Paulo,12300000,3200,1
+4,5,Santos,430000,2800,1
+5,6,Sorocaba,720000,2500,1
+6,7,Ribeirão Preto,720000,2600,1
+7,8,São José dos Campos,730000,2800,1
+8,9,Piracicaba,410000,2500,1
+9,10,Bauru,380000,2400,1
+10,11,Belo Horizonte,2400000,2700,2
+11,12,Uberlândia,700000,2500,2
+12,13,Contagem,670000,2300,2
+13,14,Juiz de Fora,570000,2400,2
+14,15,Betim,450000,2300,2
+15,16,Montes Claros,420000,2000,2
+16,17,Uberaba,340000,2400,2
+17,18,Governador Valadares,280000,1900,2
+18,19,Ipatinga,270000,2200,2
+19,20,Sete Lagoas,240000,2100,2

@@ -1,0 +1,51 @@
+bairros:
+  config:
+    source: api
+    layer: bronze
+    description: Person data from CRM
+
+  columns:
+
+    cod_bairro:      
+      role: bk
+      hash_key: hk_bairro
+      dtype: int64
+      nullable: false
+      description: cod_bairro
+
+    nome:      
+      role: attribute
+      dtype: string
+      nullable: false
+      description: Nome
+
+    habitantes:
+      role: attribute
+      dtype: int64
+      nullable: false
+      description: habitantes
+
+    renda_percapita:
+      role: attribute
+      dtype: float64
+      nullable: false      
+      description: renda_percapita
+
+    cod_cidade:      
+      role: fk
+      hash_key: hk_cidade
+      dtype: int64
+      nullable: false
+      description: cod_cidade
+
+    data_criacao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
+
+    data_alteracao:
+      role: metadata
+      dtype: datetime64[ns]
+      nullable: false
+      description: Load timestamp
