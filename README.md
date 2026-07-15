@@ -141,7 +141,8 @@ python main.py
 - [ ] Testes automatizados
 
 ---
-
+### Power BI
+![alt text](images/image.png)
 <div align="center">
 
 ### 🌿 Dados bem organizados também contam boas histórias.
